@@ -1,0 +1,93 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8fafc;
+    color: #0f172a;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    margin-bottom: 16px;
+}
+
+form {
+    background: #ffffff;
+    padding: 20px;
+    border: 1px solid #cbd5e1;
+    border-radius: 14px;
+    margin-bottom: 24px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+}
+
+button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    align-items: stretch;
+}
+
+.card {
+    flex: 1 1 220px;
+    padding: 20px;
+    border: 1px solid #cbd5e1;
+    border-radius: 14px;
+    background: #ffffff;
+    box-shadow: 0 8px 24px rgba(15,23,42,.12);
+}
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain; /* Mengubah dari cover ke contain agar gambar utuh tidak terpotong */
+    background: #f1f5f9; /* Memberikan latar belakang abu-abu terang di sisa ruang kosong */
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+.actions {
+    display: flex;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.alert {
+    padding: 12px;
+    background: #dcfce7;
+    color: #166534;
+    border-radius: 6px;
+    margin-bottom: 16px;
+}
